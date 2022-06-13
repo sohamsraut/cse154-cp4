@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+  Name: Soham Raut
+  Date: May 21, 2022
+  Section: CSE 154 AF
+  This is the index.html page for my TaskMaster task manager web page. It is used to implement
+  a web-based task manager system with different categories of tasks, and tools to add and
+  remove tasks. It uses a username to differentiate between different people using it.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lato&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>TaskMaster</title>
+  </head>
+  <body>
+    <header>
+      <h1>TaskMaster</h1>
+      <p>One place to manage all your work!</p>
+    </header>
+    <main>
+      <section id="intro-view">
+        <label for="username">Enter Username</label>
+        <input type="text" id="username">
+        <button id="enter-user">Manage Tasks!</button>
+      </section>
+      <section id="task-view" class="hidden">
+        <p id="user-message">
+          <!--Populated by JS-->
+        </p>
+        <form>
+          <label for="new-task">Enter Task: </label>
+          <input type="text" id="new-task" name="new-task"><br>
+          <label for="new-category">Enter Category:</label>
+          <input type="text" id="new-category" name="new-category"><br>
+        </form>
+        <button id="new-btn">New Task!</button>
+        <form id="category-select">
+          <p>Select Category: </p>
+          <label for="learn"><input type="radio" value="learn" name="learn" id="learn">Learn</label>
+          <label for="assignments">
+            <input type="radio" value="assignments" name="assignments" id="assignments">
+            Assignments
+          </label>
+          <label for="important">
+            <input type="radio" value="important" name="important" id="important">
+            Important
+          </label>
+          <label for="other"><input type="radio" value="other" name="other" id="other">Other</label>
+          <label for="all"><input type="radio" value="all" checked name="all" id="all">All</label>
+        </form>
+        <p id="task-message" class="hidden"></p>
+        <article id="tasks">
+          <!--Populated by JS-->
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; Soham Raut, 2022. All other attributions cited in document or page source.
+      </p>
+    </footer>
+  </body>
+</html>

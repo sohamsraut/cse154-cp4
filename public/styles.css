@@ -1,0 +1,144 @@
+/*
+  Name: Soham Raut
+  Date: May 21, 2022
+  Section: CSE 154 AF
+  This is the styles.css page used to style the index.html page of my TaskMaster task manager.
+  It uses a navy blue-aqua theme with some elements styled in black and white.
+*/
+
+.hidden, #task-view.hidden, #intro-view.hidden {
+  display: none;
+}
+
+body {
+  color: #7ad9c4;
+  background-color: #00203f;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+#intro-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  border: 3px solid white;
+  margin: auto auto;
+  width: 75%;
+  border-radius: 20px;
+}
+
+#intro-view label {
+  font-size: 25px;
+}
+
+input {
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  width: 200px;
+  font-size: 20px;
+  color: #00203f;
+  background-color: #7ad9cf;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #7ad9cf;
+  background-color: black;
+}
+
+footer {
+  font-size: 15px;
+  margin-top: 20px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#tasks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.task {
+  background-color: black;
+  width: 30%;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.task p {
+  font-size: 25px;
+  width: 100%;
+  margin: 15px 5px;
+}
+
+.task > .category {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 15px;
+  width: 25%;
+}
+
+#user-message {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.task button {
+  align-self: center;
+  width: 100px;
+  font-size: 15px;
+}
+
+.important {
+  order: -1;
+}
+
+#new-task {
+  width: 50%;
+}
+
+#task-message.error {
+  color: red;
+}
+
+#task-message {
+  background-color: black;
+  font-size: 20px;
+  width: 45%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+header {
+  font-size: 200%;
+}
+
+#category-select {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#category-select label, #category-select p {
+  margin: 10px auto;
+  font-size: 20px;
+}
